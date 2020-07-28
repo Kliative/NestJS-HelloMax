@@ -34,7 +34,7 @@ export class ProductsController {
         @Body('title') prodTitle: string,
         @Body('desciption') prodDesc: string,
         @Body('price') prodPrice: number,
-    ) {
+    ): null {
         this.productsService.updateProduct(prodId, prodTitle, prodDesc, prodPrice);
         return null;
     }
